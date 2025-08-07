@@ -1,0 +1,205 @@
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #578f99;
+      background-image: url(imagens/logo-fenda.png);
+      background-attachment: fixed;
+       
+    }
+
+    header {
+      background-color: #0088a0;
+      color: white;
+      margin-bottom: 0px;
+    }
+
+    .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100px; 
+    overflow: hidden; 
+    background-color: #0088a0;
+    margin-bottom: 0px;
+    }
+
+    .logo {
+    height: 200px; 
+    width: auto;
+    transform: rotate(-10deg);
+    box-shadow: 0px 0px 0px;
+    }
+
+
+
+    .menu-content {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .menu-content h2 {
+      margin: auto 0 10px 0;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .menu-content ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 15px;
+    }
+
+    .menu-content li {
+      margin: 0;
+    }
+
+    .menu-content a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .menu-content a:hover {
+      background-color: #1d1d1d;
+      box-shadow: 1px 1px 3px black;
+    }
+
+    main {
+      border-radius: 20px;
+      margin-top: 0px;
+      width: 80%;
+
+      background-image: linear-gradient(to right, cadetblue,rgb(67, 105, 105));
+      margin: auto;
+    }
+
+    .texto {
+      font-size: 1.6em;
+      line-height: 1.6;
+      color: #161616;
+      padding: 20px;
+      max-width: 800px;
+      display: flex;
+    }
+
+    .carro{
+        display: flex;
+        width: auto;
+        height: 600px;
+    }
+
+    .img-carro{
+        display: flex;
+
+    }
+
+    h1 , h2 {
+        padding-left:10px ;
+    }
+
+    footer {
+      background-color: #0088a0;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    img{
+       display: flex;
+      border-radius: 5%;
+      box-shadow: 1px 1px 10px black;;
+      width: 600px;
+    }
+
+
+
+.cardapio {
+  display: flex;
+  flex-direction: row; /* imagem à esquerda, texto à direita */
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.texto-cardapio {
+  font-size: 1.8em;
+  max-width: 400px;
+  color: #000000;
+}
+
+
+@media (max-width: 1024px) {
+  .menu {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    height: 120px;
+    margin-bottom: 10px;
+    transform: rotate(0deg);
+  }
+
+  .menu-content {
+    margin-left: 0;
+  }
+
+  .menu-content h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .menu-content ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  main {
+    width: 95%;
+    min-height: auto;
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .img-carro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto {
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .carro {
+    height: auto;
+    max-width: 65%;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
