@@ -12,6 +12,7 @@
       background-color: #0088a0;
       color: white;
       margin-bottom: 0px;
+      box-shadow: 1px 1px 15px black;
     }
 
     .menu {
@@ -138,8 +139,17 @@
   color: #000000;
 }
 
+.Plankton{
+  box-shadow: none;
+  width: 200px;
+  height: auto;
+  margin-top: -120px;
+  margin-left: -49px;
+  position: absolute;
+}
 
-@media (max-width: 1024px) {
+
+@media (max-width: 600px) {
   .menu {
     flex-direction: column;
     height: auto;
@@ -148,13 +158,16 @@
   }
 
   .logo {
-    height: 120px;
+    height: 200px;
     margin-bottom: 10px;
     transform: rotate(0deg);
+    margin-top: -60px;
+
   }
 
   .menu-content {
     margin-left: 0;
+    margin-top: -40px;
   }
 
   .menu-content h2 {
@@ -169,7 +182,7 @@
   }
 
   main {
-    width: 95%;
+    width: 90%;
     min-height: auto;
     padding: 10px;
   }

@@ -34,14 +34,58 @@
   </div>
   </main>
 
+  <!--n esquecer de mudar isso aki, coloquei só p ver se ia-->
+    <div style="margin-top: 20px; text-align: center;">
+      <button onclick="toggleAudio()" style="padding: 10px 20px;">🔊 Ligar/Desligar Música</button>
+    </div>
+
+    <audio id="bgAudio" loop>
+      <source src="Audio/SpongeBob Production Music Twelfth Street Rag.mp3" type="audio/mpeg">
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+  </main>
+
   <footer>
     <p>© 2024 Fenda do Biquíni Gourmet. Todos os direitos reservados.</p>
-    <b>
-        <p>Contato</p>
-    </b>
+    <b><p>Contato</p></b>
     <p>Email: siricascudo@gmail.com</p>
     <p>Telefone: (12) 3456-7890</p>
-    
   </footer>
+
+<script>
+  const audio = document.getElementById("bgAudio");
+  let isPlaying = false;
+
+  // Recupera posição e estado do áudio do localStorage
+  const savedTime = localStorage.getItem("audioTime");
+  const savedPlayState = localStorage.getItem("audioPlaying");
+
+  if (savedTime) {
+    audio.currentTime = parseFloat(savedTime);
+  }
+
+  if (savedPlayState === "true") {
+    audio.play();
+    isPlaying = true;
+  }
+
+  
+  setInterval(() => {
+    localStorage.setItem("audioTime", audio.currentTime);
+    localStorage.setItem("audioPlaying", !audio.paused);
+  }, 100); 
+  function toggleAudio() {
+    if (audio.paused) {
+      audio.play();
+      isPlaying = true;
+    } else {
+      audio.pause();
+      isPlaying = false;
+    }
+    localStorage.setItem("audioPlaying", isPlaying);
+  }
+</script>
+
+</body>
 </body>
 </html>
