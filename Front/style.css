@@ -98,24 +98,29 @@
     .texto {
       font-size: 1.6em;
       line-height: 1.6;
-      color: #161616;
+      color: #fffdfd;
       padding: 20px;
       max-width: 800px;
       min-width: 300px;
       display: flex;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
 
     .carro{
         display: flex;
+        margin-top: 2%;
         width: auto;
-        height: 600px;
+        height: 400px;
     }
 
-    .img-carro{
-        display: flex;
-
-    }
+.img-carro {
+    display: flex;
+    background: linear-gradient(#578f99af, #578f99a4), url('imagens/backgroundgeral.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
     h1 , h2 {
         padding-left:10px ;
@@ -127,6 +132,8 @@
       text-align: center;
       padding: 10px 0;
       margin-top: 20px;
+      display: flex;
+
     }
 
     img{
@@ -134,6 +141,18 @@
       border-radius: 5%;
       box-shadow: 1px 1px 10px black;;
       width: 600px;
+    }
+
+    hr{
+    }
+
+    .imgmenu {
+      width: 100%;
+      height: 90%;
+      margin-top: -20px;
+      margin-bottom: 20px;
+      border-radius: 0px;
+      box-shadow: 3px 3px 40px #47757e;
     }
 
 
@@ -166,6 +185,35 @@
 
 .main-content2 {
   
+  
+}
+
+.prefooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0088a0;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.logofooter {
+  width: 150px;
+  height: auto;
+  box-shadow: 0px 0px 0px;
+
+  display: flex;
+
+}
+
+.textos {
+  text-align: center;
+}
+
+.footer-content {
+margin: auto;
 }
 
 @media (max-width: 600px) {
@@ -175,6 +223,23 @@
     text-align: center;
     padding: 20px 10px;
   }
+
+  .divmenu {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+  }
+      .imgmenu {
+      width: 111%;
+      height: 90%;
+      margin-top: -20px;
+      margin-bottom: 20px;
+      border-radius: 0px;
+      box-shadow: 0px 0px 0px;
+      padding: 0px 0px;
+      margin-left: 0px;
+    }
 
   .logo {
     height: 180px;
@@ -218,6 +283,7 @@
     align-items: center;
   }
 
+
   .texto {
     font-size: 1.2em;
     padding: 10px;
@@ -228,6 +294,12 @@
   .carro {
     height: auto;
     max-width: 65%;
+    margin-bottom: 20px;
+  }
+
+    .carro:hover {
+    height: auto;
+    max-width: 67%;
     margin-bottom: 20px;
   }
 
