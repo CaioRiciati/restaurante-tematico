@@ -12,7 +12,6 @@
       <div class="menu">
         <img class="logo" src="imagens/logo.png" alt="Logo da hamburgueria">
         <div class="menu-content">
-          <h2>Melhor hambúrgueria da Fenda do Biquíni</h2>
           <ul>
               <li><a href="atividade cardapio.html">Voltar</a></li>
             <li><a href="Entradas.html">Entradas</a></li>
@@ -23,10 +22,11 @@
     </nav>
   </header>
 
-  <main>
+  <main class="main-content2">
   <h1>Bem-vindo à Fenda do Biquíni Gourmet!</h1>
-  <h2>O sabor que vem direto do Siri Cascudo até o seu prato!</h2>
-  <hr>
+<hr><hr><hr>
+    <hr>
+
 <div class="cardapio">
   <img src="imagens/Brownie.jpg" alt="Brownie">
   <p class="texto-cardapio">Brownie de chocolate com nozes, servido com sorvete de baunilha. R$ 12,90</p>
@@ -45,12 +45,12 @@
 
   </main>
 
-    <!-- 🎵 Botão para controle de áudio -->
+
     <div style="margin-top: 20px; text-align: center;">
       <button onclick="toggleAudio()" style="padding: 10px 20px;">🔊 Ligar/Desligar Música</button>
     </div>
 
-    <!-- 🎵 Áudio de fundo -->
+
     <audio id="bgAudio" loop>
       <source src="Audio/SpongeBob Production Music Twelfth Street Rag.mp3" type="audio/mpeg">
       Seu navegador não suporta o elemento de áudio.
@@ -65,7 +65,7 @@
     <p>Telefone: (12) 3456-7890</p>
   </footer>
 
-  <!-- 🎮 Script para controle de áudio -->
+
 <script>
   const audio = document.getElementById("bgAudio");
   let isPlaying = false;
@@ -83,11 +83,11 @@
     isPlaying = true;
   }
 
-  // Atualiza a posição do áudio de tempos em tempos
+ 
   setInterval(() => {
     localStorage.setItem("audioTime", audio.currentTime);
     localStorage.setItem("audioPlaying", !audio.paused);
-  }, 1000); // salva a cada 1 segundo
+  }, 1000); 
 
   function toggleAudio() {
     if (audio.paused) {
